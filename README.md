@@ -33,12 +33,12 @@
 | **Notification** | Firebase Cloud Messaging (FCM) |
 | **ETC** | Swagger, JWT, ReentrantLock, Redisson, AES 암호화 |
 
----
 
 ## 🧑‍💻 나의 역할
 
-### 결제 및 이체 기능 구현 및 동시성 제어
-
+<details>
+<summary><strong>결제 및 이체 기능 구현 및 동시성 제어</strong></summary>
+    
 **기술 스택**: Java, Spring Boot, JPA, MySQL
 
 - 사용자 간 **이체 및 결제 기능 구현**
@@ -74,9 +74,14 @@
 - **결과**
     - 단일 서버 환경 → MySQL 비관적 락이 빠름
     - 분산 환경 → Redisson 락이 병목 감소, 성능 우위
-    - 개선점**:** 트랜잭션 내 락 범위를 최소화해 점유 시간 축소
+    - 개선점: 트랜잭션 내 락 범위를 최소화해 점유 시간 축소
+ 
 
-### 환율 API 연동
+</details>
+
+
+<details>
+<summary><strong>환율 API 연동</strong></summary>
 
 **기술 스택**: Java, Spring Boot, WebClient
 
@@ -109,11 +114,11 @@
 - Open API 호출 비동기로 진행하여 가장 빠르게 응답 오는 값만 사용하고 탈출
 - 비동기 설계 → timeout 설정
 
----
+</details>
 
 ## 💻시스템 아키텍처
 
----
+
 
 ![아키텍처.png](assets/아키텍처.png)
 
